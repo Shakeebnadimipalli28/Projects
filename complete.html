@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Assessment Complete</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Assessment Complete ✅</h1>
+        <p>Your mental health assessment report has been generated.</p>
+        <p><strong>Summary:</strong> {{ summary }}</p>
+        <a class="button" href="/download">Download PDF Report</a>
+        <h2>Detailed Analytics</h2>
+        <canvas id="emotionChart" width="400" height="200"></canvas>
+        <canvas id="sentimentChart" width="400" height="200"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/chart.js"></script>
+</body>
+</html>

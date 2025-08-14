@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Mental Health Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Mental Health Assessment</h1>
+        <h2 id="question">{{ question }}</h2>
+        <div class="video-container">
+            <video id="video" width="320" height="240" autoplay></video>
+        </div>
+        <textarea id="answer" placeholder="Type your answer here..."></textarea>
+        <button id="submitBtn" onclick="submitAnswer()">Submit</button>
+        <p id="progress">Question 1 of {{ total }}</p>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
