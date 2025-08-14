@@ -21,11 +21,17 @@ emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surpri
 
 # Define questions
 questions = [
-    "How have you been feeling emotionally over the past week?",
-    "Can you describe your current stress levels?",
-    "Are you sleeping well lately?",
-    "Do you feel motivated to do your daily activities?",
-    "Is there anything making you anxious or worried?"
+    "How have you been feeling emotionally on a day-to-day basis?",
+        "Can you describe any recent changes in your mood, such as feeling more sad, anxious, or irritable than usual?",
+        "Have you lost interest or pleasure in activities that you used to enjoy?",
+        "How is your sleep? Are you having trouble falling or staying asleep, or are you sleeping too much?",
+        "How is your appetite? Have you experienced significant weight loss or gain recently?",
+        "Do you often feel nervous, anxious, or on edge? Are there specific situations that trigger these feelings?",
+        "Do you have difficulty concentrating, making decisions, or remembering things?",
+        "Have you had any thoughts about harming yourself or ending your life? If so, do you have a plan?",
+        "How are your relationships with family and friends? Do you feel supported by the people around you?",
+        "Do you use alcohol, drugs, or other substances? If so, how often and in what quantities, and do you feel it impacts your daily life?"
+    
 ]
 
 def get_face_emotion(img_path):
@@ -174,3 +180,4 @@ def download():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
